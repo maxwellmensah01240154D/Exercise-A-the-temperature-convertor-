@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double celsius, fahrenheit;
+    
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
+    
+    fahrenheit = (celsius * 1.8) + 32;
+    
+    cout << celsius << "°C is equal to " << fahrenheit << "°F" << endl;
+    
+    if (celsius < 0) {
+        cout << "Freezing!" << endl;
+    } else if (celsius > 30) {
+        cout << "Hot!" << endl;
+    }
+    
+    return 0;
+}
